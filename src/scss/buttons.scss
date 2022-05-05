@@ -1,0 +1,76 @@
+button,
+input[type="submit"] {
+	text-transform: uppercase;
+	padding: 0.8rem 1.5rem;
+	border: none;
+	background: #f00;
+	color: #fff;
+	font-size: 1.4rem;
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 600;
+	transition: all 0.2s;
+	position: relative;
+	z-index: 2;
+}
+button[disabled],
+input[type="submit"][disabled] {
+	color: #d12028;
+	background: #fff;
+	transform: rotate(-10deg) scale(1.5) translateX(40%) translateY(-50%);
+	border: 1px solid #d12028;
+}
+button[disabled]:hover,
+input[type="submit"][disabled]:hover {
+	color: #d12028;
+	cursor: not-allowed;
+}
+button[disabled]:after,
+input[type="submit"][disabled]:after {
+	display: none;
+}
+button:after,
+input[type="submit"]:after {
+	content: "";
+	z-index: -1;
+	display: block;
+	background: #000;
+	position: absolute;
+	width: 0;
+	height: 100%;
+	left: 0;
+	top: 0;
+	transition: all 0.2s;
+}
+button:hover,
+input[type="submit"]:hover,
+button:focus,
+input[type="submit"]:focus {
+	color: #fff;
+	outline: 0;
+}
+button:hover:after,
+input[type="submit"]:hover:after,
+button:focus:after,
+input[type="submit"]:focus:after {
+	width: 100%;
+}
+button.warning:after,
+input[type="submit"].warning:after {
+	background: #d12028;
+}
+button.success:after,
+input[type="submit"].success:after {
+	background: #2dc22d;
+}
+button.github,
+input[type="submit"].github {
+	border: 0;
+	display: block;
+	margin-bottom: 2rem;
+	width: 100%;
+	color: #fff;
+	padding: 2rem;
+	border: 5px solid #fff;
+	font-size: 1.6rem;
+	box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.05);
+}

@@ -1,0 +1,20 @@
+.total {
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 600;
+	border-bottom: 3px solid #000;
+	border-top: 3px double #000;
+}
+.total_wrap {
+	padding: 1rem 2rem;
+}
+.total_wrap-free {
+	font-size: 1.2rem;
+}
+.total_wrap-final {
+	margin-top: 10px;
+	font-weight: 600;
+}
+.total_wrap-cheap {
+	font-weight: 600;
+	color: lightseagreen;
+}

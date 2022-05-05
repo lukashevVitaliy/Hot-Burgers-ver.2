@@ -1,0 +1,76 @@
+.restaurant_select {
+	background: #fff;
+	max-width: 460px;
+	margin: 200px auto;
+	padding: 40px;
+	position: relative;
+	box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 10px rgba(0, 0, 0, 0.18);
+	&_top {
+		position: relative;
+		max-width: 380px;
+		display: flex;
+		justify-content: space-between;
+		&-header {
+			font-size: 2.4rem;
+			text-transform: uppercase;
+			margin: 0;
+			line-height: 1.4;
+			cursor: pointer;
+		}
+	}
+	&_bottom {
+		position: absolute;
+		padding: 10px 20px;
+		border: 2px solid #000;
+		top: 85px;
+		left: 40px;
+		min-width: 350px;
+		background: #fff;
+	}
+	&_bottom ul {
+		padding: 0 0 0 10px;
+	}
+	&_bottom ul li {
+		cursor: pointer;
+		list-style: none;
+		padding: 5px 0;
+	}
+	&_bottom ul li::before {
+		content: "■";
+		margin-right: 0.5rem;
+		color: #f00;
+	}
+
+	button {
+		margin-top: 10px;
+	}
+
+	.arrow_picker {
+		display: inline-block;
+		vertical-align: middle;
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
+		padding-top: 2px;
+		width: 14px;
+		&-up {
+			background: url("../../scss/images/up.svg") no-repeat;
+			background-size: auto;
+			background-size: 100% auto;
+			width: 13px;
+			height: 12px;
+			top: 0;
+			cursor: pointer;
+			margin-bottom: 5px;
+		}
+		&-down {
+			background: url("../../scss/images/down.svg") no-repeat;
+			background-size: auto;
+			background-size: 100% auto;
+			width: 13px;
+			height: 12px;
+			cursor: pointer;
+		}
+	}
+}

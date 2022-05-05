@@ -1,0 +1,42 @@
+header.top {
+	background: url("../../scss/images/burger-logo-4.jpg") center no-repeat;
+	background-size: cover;
+	color: #fff;
+}
+header.top .wrap {
+	height: 100%;
+	background-image: linear-gradient(to bottom, rgba(61, 26, 22, 0), rgba(61, 26, 22, 0.6));
+}
+header.top .header-content {
+	padding: 4rem 0;
+	margin: 0 4rem;
+}
+header.top .header-content .header-rating {
+	padding: 4px 8px;
+	background-color: #ffe033;
+	display: inline-flex;
+	border-radius: 18px;
+	align-items: center;
+	font-size: 1.4rem;
+}
+header.top .header-content .header-rating .header-rating_tag {
+	color: #000;
+	margin-right: 5px;
+}
+header.top .header-content .header-divider {
+	height: 1px;
+	opacity: 0.2;
+	margin-top: 20px;
+	margin-bottom: 8px;
+	background-color: #fff;
+}
+header.top .header-content h1 {
+	font-size: 3.4rem;
+}
+header.top .header-content h3 {
+	margin: 0;
+	font-size: 2rem;
+}
+header.top .header-content .sub-header {
+	color: #f00;
+}

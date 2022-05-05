@@ -1,0 +1,21 @@
+.login-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.login-header .avatar {
+	display: inline-block;
+	margin: 5px;
+	border: 2px solid rgba(255, 255, 255, 0.4);
+	border-radius: 50%;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+	transition: linear 0.25s;
+	height: 50px;
+	width: 50px;
+}
+.login-header .avatar img {
+	border-radius: 50%;
+	max-width: 100%;
+	max-height: 100%;
+}
